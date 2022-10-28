@@ -51,14 +51,7 @@
             'Accept': 'application/json'
         }
       }).then(response => {
-        if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
-          form.reset()
-        } else {
-          response.json().then(data => {
-            window.location = 'step3.html'
-          })
-        }
+        window.location = 'step3.html'
       }).catch(error => {
 //         status.innerHTML = "Oops! There was a problem submitting your form"
       });
